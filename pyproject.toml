@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multimodal-document-retrieval-20261001"
+version = "0.1.0"
+description = "A document-retrieval baseline that combines OCR text, layout labels, image captions, and metadata evidence."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "R-behera" }]
+dependencies = []
+
+[project.scripts]
+multimodal-document-retrieval-20261001 = "multimodal_document_retrieval.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,197 @@
+{
+  "format": "daily-project-prototype-v1",
+  "project": "multimodal-document-retrieval",
+  "title": "Multimodal Document Retrieval Baseline",
+  "domain": "multimodal-ai",
+  "mode": "retrieval",
+  "labels": [
+    "invoice",
+    "technical-diagram",
+    "policy-form"
+  ],
+  "prototypes": {
+    "invoice": {
+      "80": 3,
+      "184": 2,
+      "1480": 3,
+      "find": 3,
+      "the": 3,
+      "invoice": 7,
+      "with": 3,
+      "a": 5,
+      "shipping": 6,
+      "surcharge": 6,
+      "table": 8,
+      "ocr": 5,
+      "total": 5,
+      "image": 3,
+      "company": 3,
+      "seal": 3,
+      "in": 2,
+      "an": 3,
+      "operations": 2,
+      "review": 2,
+      "for": 1,
+      "evaluation": 1,
+      "case": 1,
+      "which": 2,
+      "contains": 2,
+      "tax": 4,
+      "adjustment": 4,
+      "subtotal": 2,
+      "final": 2
+    },
+    "technical-diagram": {
+      "in": 2,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "locate": 2,
+      "the": 5,
+      "architecture": 2,
+      "diagram": 7,
+      "showing": 2,
+      "a": 5,
+      "queue": 4,
+      "caption": 5,
+      "service": 5,
+      "labels": 5,
+      "producer": 2,
+      "consumer": 2,
+      "for": 2,
+      "evaluation": 2,
+      "case": 2,
+      "show": 3,
+      "network": 6,
+      "with": 3,
+      "gateway": 6,
+      "topology": 3,
+      "client": 3
+    },
+    "policy-form": {
+      "find": 2,
+      "the": 2,
+      "signed": 2,
+      "privacy": 4,
+      "exception": 4,
+      "request": 4,
+      "ocr": 4,
+      "layout": 2,
+      "signature": 4,
+      "block": 2,
+      "approved": 4,
+      "for": 2,
+      "an": 3,
+      "evaluation": 2,
+      "case": 2,
+      "in": 1,
+      "operations": 1,
+      "review": 1,
+      "which": 2,
+      "form": 2,
+      "includes": 2,
+      "retention": 4,
+      "approval": 2,
+      "checkbox": 2,
+      "present": 2
+    }
+  },
+  "idf": {
+    "80": 2.252763,
+    "184": 2.252763,
+    "1480": 2.252763,
+    "ocr": 1.336472,
+    "total": 1.847298,
+    "table": 1.847298,
+    "shipping": 2.252763,
+    "surcharge": 2.252763,
+    "image": 2.252763,
+    "company": 2.252763,
+    "seal": 2.252763,
+    "caption": 1.847298,
+    "service": 1.847298,
+    "diagram": 2.252763,
+    "labels": 1.847298,
+    "producer": 2.252763,
+    "queue": 2.252763,
+    "consumer": 2.252763,
+    "privacy": 2.252763,
+    "exception": 2.252763,
+    "layout": 2.252763,
+    "signature": 1.847298,
+    "block": 2.252763,
+    "approved": 1.847298,
+    "invoice": 2.252763,
+    "subtotal": 2.252763,
+    "tax": 2.252763,
+    "adjustment": 2.252763,
+    "final": 2.252763,
+    "network": 2.252763,
+    "topology": 2.252763,
+    "client": 2.252763,
+    "gateway": 2.252763,
+    "retention": 2.252763,
+    "request": 2.252763,
+    "checkbox": 2.252763,
+    "present": 2.252763
+  },
+  "documents": [
+    {
+      "id": "doc-01",
+      "label": "invoice",
+      "text": "OCR total 1480; table shipping surcharge 80; image company seal.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "multimodal-ai"
+      }
+    },
+    {
+      "id": "doc-02",
+      "label": "technical-diagram",
+      "text": "Caption service diagram; labels producer queue consumer.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "multimodal-ai"
+      }
+    },
+    {
+      "id": "doc-03",
+      "label": "policy-form",
+      "text": "OCR privacy exception; layout signature block approved.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "multimodal-ai"
+      }
+    },
+    {
+      "id": "doc-04",
+      "label": "invoice",
+      "text": "OCR invoice 184; table subtotal tax adjustment final total.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "multimodal-ai"
+      }
+    },
+    {
+      "id": "doc-05",
+      "label": "technical-diagram",
+      "text": "Caption network topology; labels client gateway service.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "multimodal-ai"
+      }
+    },
+    {
+      "id": "doc-06",
+      "label": "policy-form",
+      "text": "OCR retention request; checkbox approved; signature present.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "multimodal-ai"
+      }
+    }
+  ],
+  "graph_edges": [],
+  "confidence_threshold": 0.18,
+  "trained_on_synthetic_data": true
+}

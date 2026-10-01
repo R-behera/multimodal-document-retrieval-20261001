@@ -1,0 +1,52 @@
+{
+  "name": "Multimodal Document Retrieval Baseline",
+  "problem": "Business documents contain meaning in text, tables, layout, and imagery that text-only retrieval can miss.",
+  "domain": "multimodal-ai",
+  "architecture": "retrieval",
+  "hugging_face_tasks": [
+    "visual-document-retrieval",
+    "document-question-answering",
+    "image-to-text",
+    "feature-extraction"
+  ],
+  "recommended_stack": [
+    "FastAPI for ingestion and multimodal search",
+    "Transformers with LayoutLMv3 or ColPali-style encoders",
+    "OCR adapter plus image captioning",
+    "PostgreSQL plus pgvector for fused embeddings",
+    "Object storage for source documents",
+    "OpenTelemetry plus retrieval ablation reports"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "SEC EDGAR company facts API",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "purpose": "Real tabular filing facts and document metadata"
+    },
+    {
+      "name": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all:document%20understanding&start=0&max_results=5",
+      "purpose": "Public papers and document-layout retrieval scenarios"
+    }
+  ],
+  "job_description_skills": [
+    "Multimodal embeddings and document understanding",
+    "OCR, layout, image, and text feature fusion",
+    "Vector retrieval and modality-aware ranking",
+    "Ablation testing and retrieval evaluation",
+    "Scalable document ingestion and object storage"
+  ],
+  "impact_targets": [
+    "Improve Recall@5 by >= 20% over text-only retrieval",
+    "Report modality ablations for OCR, layout, and image signals",
+    "Index 100,000 documents with resumable ingestion",
+    "Keep p95 retrieval latency below 500 ms"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 1,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}
